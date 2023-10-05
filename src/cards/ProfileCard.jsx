@@ -1,7 +1,8 @@
 import * as React from 'react';
-import {Box, Card, CardMedia, Grid, styled, Typography} from '@mui/material';
+import {Box, Card, CardMedia, Grid, Typography} from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
+
 export default function MediaControlCard() {
   return (
     <>
@@ -33,6 +34,7 @@ export default function MediaControlCard() {
           </Box>
           <Grid>
             <CardMedia
+              loading='lazy'
               component='img'
               alt='Portrait'
               src='././portrait.png'

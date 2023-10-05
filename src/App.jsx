@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import ProfileCard from './cards/ProfileCard.jsx';
 import ThemeButton from './buttons/ThemeButton.jsx';
-import {Box, Button, createTheme, CssBaseline, Grid, ThemeProvider} from '@mui/material';
+import {createTheme, CssBaseline, Grid, ThemeProvider} from '@mui/material';
 
 const getDesignTokens = (mode) => ({
   palette: {
