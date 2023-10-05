@@ -23,10 +23,8 @@ export default function MediaControlCard() {
                 <Grid>
                   <Grid container sx={{ alignItems: 'left', gap: '0.3rem', pt: 1 }}>
                     <Typography sx={{ fontSize: 'h7.fontSize' }}>
-                      I'm currently learning <Typography display="inline" sx={{ color: 'text.secondary' }}>React</Typography> alongside software languages like <Typography display="inline" sx={{ color: 'text.secondary' }}>Java</Typography>
-                    </Typography>
-                    <Typography sx={{ fontSize: 'h7.fontSize' }}>
-                      and studying at <Typography display="inline" sx={{ color: 'text.secondary' }}>California State University, Sacramento</Typography> as a <Typography display="inline" sx={{ color: 'text.secondary'}}>Computer Science major</Typography>.
+                      I'm currently learning <Typography display="inline" sx={{ color: 'text.secondary' }}>React</Typography> alongside software languages like <Typography display="inline" sx={{ color: 'text.secondary' }}>Java </Typography>
+                      and studying at <Typography display="inline" sx={{ color: 'text.secondary' }}>California State University, Sacramento</Typography> as a <Typography display="inline" sx={{ color: 'text.secondary'}}>Computer Science major</Typography>. 
                     </Typography>
                   </Grid>
                 </Grid>
