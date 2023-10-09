@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Box, Card, CardMedia, Grid, Typography} from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedIn from "@mui/icons-material/LinkedIn";
 
 export default function MediaControlCard() {
   return (
@@ -45,6 +46,10 @@ export default function MediaControlCard() {
                 <IconButton>
                   <GitHubIcon onClick={() =>
                     window.open('https://github.com/Unalphabetical/', '_blank')} />
+                </IconButton>
+                <IconButton>
+                  <LinkedIn onClick={() =>
+                    window.open('https://www.linkedin.com/in/puthvang/', '_blank')} />
                 </IconButton>
               </Box>
             </Grid>
