@@ -48,7 +48,7 @@ function App() {
           <ThemeButton label={themeMode} setTheme={setThemeMode}></ThemeButton>
         </Grid>
 
-        <Grid sx={{display: 'flex'}}>
+        <Grid sx={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '90vh'}}>
           <ProfileCard></ProfileCard>
         </Grid>
 
