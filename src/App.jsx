@@ -13,10 +13,10 @@ const getDesignTokens = (mode) => ({
             default: '#fafafa'
           },
           text: {
-            primary: '#050505',
-            secondary: '#c0074e',
-            tertiary: '#fdcee0',
-            accent: '#f70864'
+            primary: '#0e2014',
+            secondary: '#44a266',
+            tertiary: '#bbe2c9',
+            accent: '#3e935d'
           },
         }
         : {
@@ -24,10 +24,10 @@ const getDesignTokens = (mode) => ({
             default: '#050505'
           },
           text: {
-            primary: '#fafafa',
-            secondary: '#c0074e',
-            tertiary: '#310214',
-            accent: '#fa6ba2'
+            primary: '#dff1e5',
+            secondary: '#5dbb80',
+            tertiary: '#1d442b',
+            accent: '#6cc18b'
           },
         }),
   },
