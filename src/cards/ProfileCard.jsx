@@ -7,7 +7,7 @@ export default function MediaControlCard() {
   return (
     <>
       <Box p={1} sx={{ maxWidth: '100vh'}}>
-        <Card sx={{ display: 'flex', maxWidth: 1500, maxHeight: 700}}>
+        <Card sx={{ display: 'flex', maxHeight: 700}}>
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
             <Grid
               container
@@ -15,7 +15,7 @@ export default function MediaControlCard() {
               alignItems='center'
               justify='center'
             >
-              <Typography component='div' align='left' sx={{ m: 2 }}>
+              <Typography component='div' align='left' sx={{ m: 1.5 }}>
                 <Grid container sx={{ alignItems: 'left', gap: '0.7rem' }}>
                   <Box sx={{ color: 'text.primary', fontSize: 'h4.fontSize'}}>Hi, I'm </Box>
                   <Box sx={{ color: 'text.secondary', fontSize: 'h4.fontSize' }}>Puth.</Box>
@@ -37,8 +37,8 @@ export default function MediaControlCard() {
               loading='lazy'
               component='img'
               alt='Portrait'
-              src='././portrait.png'
-              sx={{minWidth: 150, minHeight: 200, maxHeight: 500}}
+              src='././portrait.jpg'
+              sx={{maxHeight: 500}}
             />
             <Grid style={{ display: 'flex' }}>
               <Box sx={{ m: 1 }}>
