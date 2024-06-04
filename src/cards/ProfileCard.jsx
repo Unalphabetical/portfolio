@@ -13,10 +13,10 @@ export default function ProfileCard() {
           <Box>
             <Typography component='div' align='left' sx={{ m: 1.5 }}>
               <Grid container sx={{ alignItems: 'left', gap: '0.7rem' }}>
-                <Box sx={{ color: 'text.primary', fontSize: 'h4.fontSize'}}>Hi, I'm </Box>
-                <Box sx={{ color: 'text.secondary', fontSize: 'h4.fontSize' }}>Puth.</Box>
+                <Box sx={{ color: 'text.primary', fontSize: 'h5.fontSize'}}>Hi, I'm </Box>
+                <Box sx={{ color: 'text.secondary', fontSize: 'h5.fontSize' }}>Puth Vang.</Box>
               </Grid>
-              <Box sx={{ color: 'text.secondary', fontSize: 'h4.fontSize' }}>A fullstack developer.</Box>
+              <Box sx={{ color: 'text.secondary', fontSize: 'h5.fontSize' }}>A software and full stack web developer.</Box>
               <Grid>
                 <Grid container sx={{ alignItems: 'left', gap: '0.3rem', pt: 1 }}>
                   <Typography sx={{ fontSize: 'h7.fontSize' }}>
@@ -34,7 +34,7 @@ export default function ProfileCard() {
                 component='img'
                 alt='Portrait'
                 src='././portrait.jpg'
-                sx={{maxHeight: 256, maxWidth: 256}}
+                sx={{minHeight: 128, minWidth: 128, maxHeight: 256, maxWidth: 256}}
             />
             <Grid style={{ display: 'flex' }}>
               <Box sx={{ m: 1 }}>
