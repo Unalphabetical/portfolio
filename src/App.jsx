@@ -3,6 +3,7 @@ import './App.css';
 import ProfileCard from './cards/ProfileCard.jsx';
 import ThemeButton from './buttons/ThemeButton.jsx';
 import {createTheme, CssBaseline, Grid, ThemeProvider} from '@mui/material';
+import ProjectsCard from "./cards/ProjectsCard.jsx";
 
 const getDesignTokens = (mode) => ({
   palette: {
@@ -48,8 +49,12 @@ function App() {
           <ThemeButton label={themeMode} setTheme={setThemeMode}></ThemeButton>
         </Grid>
 
-        <Grid sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Grid sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '90vh' }}>
           <ProfileCard></ProfileCard>
+        </Grid>
+
+        <Grid sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '70vh' }}>
+          <ProjectsCard></ProjectsCard>
         </Grid>
 
       </ThemeProvider>
