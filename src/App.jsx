@@ -49,11 +49,11 @@ function App() {
           <ThemeButton label={themeMode} setTheme={setThemeMode}></ThemeButton>
         </Grid>
 
-        <Grid sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '90vh' }}>
+        <Grid sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
           <ProfileCard></ProfileCard>
         </Grid>
 
-        <Grid sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '70vh' }}>
+        <Grid sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <ProjectsCard></ProjectsCard>
         </Grid>
 
