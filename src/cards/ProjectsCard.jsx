@@ -51,27 +51,29 @@ export default function ProjectsCard() {
                                     />
                                 </Grid>
                             }
-                        {value === 1 &&
-                            <Grid>
-                                <Typography>
-                                    A simple website that was made for the HoYoverse Game: Honkai Star Rail.
-                                    It served one purpose and was made within the patch to calculate the upcoming Trailblaze levels
-                                    when everyone was low on levels.
-                                </Typography>
-                                <Box
-                                    component="img"
-                                    sx={{
-                                        height: '100%',
-                                        width: '95%',
-                                        minHeight: '100%',
-                                        minWidth: '40%',
-                                        padding: '16px 0'
-                                    }}
-                                    alt="Main menu of the Snake game"
-                                    src="../../honkaistarrailcalculator.png"
-                                />
-                            </Grid>
-                        }
+                            {value === 1 &&
+                                <Grid>
+                                    <Typography>
+                                        A simple website that was made for the HoYoverse Game: Honkai Star Rail.
+                                        It served one purpose and was made within the patch to calculate the upcoming Trailblaze levels
+                                        when everyone was low on levels. It features automatic calculations for the experience, immersifiers,
+                                        fuels, and refreshes. It does not count in experience from outside sources such as events, quests, or character quests
+                                        as those varies in experience and will take a while to gather data and calculate.
+                                    </Typography>
+                                    <Box
+                                        component="img"
+                                        sx={{
+                                            height: '100%',
+                                            width: '95%',
+                                            minHeight: '100%',
+                                            minWidth: '40%',
+                                            padding: '16px 0'
+                                        }}
+                                        alt="Main menu of the Snake game"
+                                        src="../../honkaistarrailcalculator.png"
+                                    />
+                                </Grid>
+                            }
                         </Box>
                     </Card>
                 </Box>
