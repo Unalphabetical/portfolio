@@ -41,6 +41,7 @@ export default function ProjectsCard() {
                                     <Box
                                         component="img"
                                         sx={{
+                                            loading: 'lazy',
                                             height: '100%',
                                             width: '95%',
                                             minHeight: '100%',
@@ -64,13 +65,14 @@ export default function ProjectsCard() {
                                     <Box
                                         component="img"
                                         sx={{
+                                            loading: 'lazy',
                                             height: '100%',
                                             width: '95%',
                                             minHeight: '100%',
                                             minWidth: '40%',
                                             padding: '16px 0'
                                         }}
-                                        alt="Main menu of the Snake game"
+                                        alt="Main page of the calculator"
                                         src="../../honkaistarrailcalculator.png"
                                     />
                                 </Grid>
@@ -87,25 +89,27 @@ export default function ProjectsCard() {
                                     <Box
                                         component="img"
                                         sx={{
+                                            loading: 'lazy',
                                             height: '100%',
                                             width: '95%',
                                             minHeight: '100%',
                                             minWidth: '40%',
                                             padding: '16px 0'
                                         }}
-                                        alt="Main menu of the Snake game"
+                                        alt="Java code for the statement"
                                         src="../../mysql.png"
                                     />
                                     <Box
                                         component="img"
                                         sx={{
+                                            loading: 'lazy',
                                             height: '100%',
                                             width: '95%',
                                             minHeight: '100%',
                                             minWidth: '40%',
                                             padding: '16px 0'
                                         }}
-                                        alt="Main menu of the Snake game"
+                                        alt="Generated SQL from the statement"
                                         src="../../mysql_generated.png"
                                     />
                                 </Grid>
