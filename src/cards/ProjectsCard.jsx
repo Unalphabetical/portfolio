@@ -26,6 +26,7 @@ export default function ProjectsCard() {
                             >
                                 <Tab label="Snake" />
                                 <Tab label="Honkai Star Rail Calculator" />
+                                <Tab label="My/Oracle SQL Builder" />
                             </Tabs>
                         </Box>
                         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -71,6 +72,41 @@ export default function ProjectsCard() {
                                         }}
                                         alt="Main menu of the Snake game"
                                         src="../../honkaistarrailcalculator.png"
+                                    />
+                                </Grid>
+                            }
+                            {value === 2 &&
+                                <Grid>
+                                    <Typography>
+                                        An application made at California State University, Sacramento in one of my
+                                        Computer Science class: Database Management Systems. It was made to simplify
+                                        the creation of OracleSQL statements at first, from CREATE to INSERT to DELETE to UPDATE and more.
+                                        Eventually was expanded to MySQL because of another database class: Advanced Database Management Systems.
+                                        Now it includes both OracleSQL and MySQL. Soon to include MicrosoftSQL whenever I have time.
+                                    </Typography>
+                                    <Box
+                                        component="img"
+                                        sx={{
+                                            height: '100%',
+                                            width: '95%',
+                                            minHeight: '100%',
+                                            minWidth: '40%',
+                                            padding: '16px 0'
+                                        }}
+                                        alt="Main menu of the Snake game"
+                                        src="../../mysql.png"
+                                    />
+                                    <Box
+                                        component="img"
+                                        sx={{
+                                            height: '100%',
+                                            width: '95%',
+                                            minHeight: '100%',
+                                            minWidth: '40%',
+                                            padding: '16px 0'
+                                        }}
+                                        alt="Main menu of the Snake game"
+                                        src="../../mysql_generated.png"
                                     />
                                 </Grid>
                             }
