@@ -49,7 +49,7 @@ export default function ProjectsCard() {
                                             padding: '16px 0'
                                         }}
                                         alt="Main menu of the Snake game"
-                                        src="../../snake.png"
+                                        src="snake.png"
                                     />
                                 </Grid>
                             }
@@ -73,7 +73,7 @@ export default function ProjectsCard() {
                                             padding: '16px 0'
                                         }}
                                         alt="Main page of the calculator"
-                                        src="../../honkaistarrailcalculator.png"
+                                        src="honkaistarrailcalculator.png"
                                     />
                                 </Grid>
                             }
@@ -97,7 +97,7 @@ export default function ProjectsCard() {
                                             padding: '16px 0'
                                         }}
                                         alt="Java code for the statement"
-                                        src="../../mysql.png"
+                                        src="mysql.png"
                                     />
                                     <Box
                                         component="img"
@@ -110,7 +110,7 @@ export default function ProjectsCard() {
                                             padding: '16px 0'
                                         }}
                                         alt="Generated SQL from the statement"
-                                        src="../../mysql_generated.png"
+                                        src="mysql_generated.png"
                                     />
                                 </Grid>
                             }
