@@ -15,16 +15,18 @@ const skills = [
 ];
 ---
 
-<section class="py-24" id="skills">
+<section class="py-24 reveal" id="skills" data-reveal-delay="0">
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="bg-base-200/50 rounded-box p-6 sm:p-10">
     <h2 class="text-fluid-2xl font-bold mb-2">Skills</h2>
     <p class="text-base-content/60 mb-10">Languages and tools I work with</p>
-    <div class="flex flex-wrap gap-3">
+    <div class="flex flex-wrap gap-3 reveal-children">
       {skills.map((s) => (
         <span class="px-4 py-2 rounded-full text-sm font-medium bg-base-200 text-base-content/80">
           {s.name}
         </span>
       ))}
+    </div>
     </div>
   </div>
 </section>
