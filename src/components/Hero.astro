@@ -1,0 +1,37 @@
+---
+const portraitSrc = `${import.meta.env.BASE_URL}portrait.jpg`;
+---
+
+<section class="min-h-screen flex items-center">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 w-full">
+    <div class="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+      <div class="md:col-span-3 space-y-6">
+        <h1 class="text-fluid-4xl font-bold leading-tight">
+          Puth Vang
+        </h1>
+        <p class="text-fluid-lg text-base-content/70 leading-relaxed max-w-lg">
+          Full-stack developer leaning on Astro, Java, and Python to build useful tools - with a recent CS degree from Sacramento State and an AI-accelerated workflow.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#projects" class="btn btn-primary">
+            View projects
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Get in touch
+          </a>
+        </div>
+      </div>
+      <div class="md:col-span-2 md:-translate-y-4">
+        <div class="relative">
+          <div class="absolute -inset-1 -rotate-2 rounded-2xl bg-base-200"></div>
+          <img
+            src={portraitSrc}
+            alt="Puth Vang"
+            class="relative rounded-2xl w-full h-auto object-cover aspect-[3/4]"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
