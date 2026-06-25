@@ -1,25 +1,12 @@
 ---
+import BaseLayout from '@layouts/BaseLayout.astro';
+
 const title = 'Puth Vang — Software & Full-Stack Developer';
 const description =
   'Puth Vang is a software and full-stack web developer studying Computer Science at California State University, Sacramento.';
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpeg" href={`${import.meta.env.BASE_URL}portrait.jpg`} />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet" />
-  </head>
-  <body class="min-h-screen flex items-center justify-center">
-    <main class="text-center space-y-6">
-      <h1 class="text-fluid-4xl font-bold">Puth Vang</h1>
-      <button class="btn btn-primary">Astro scaffold ready</button>
-    </main>
-  </body>
-</html>
+<BaseLayout title={title} description={description}>
+  <h1 class="text-fluid-4xl font-bold">Puth Vang</h1>
+  <button class="btn btn-primary">Astro scaffold ready</button>
+</BaseLayout>
