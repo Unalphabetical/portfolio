@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://puthvang.dev',
+  site: 'https://puthvang.com',
   base: '/portfolio/',
   integrations: [tailwind()],
 });
