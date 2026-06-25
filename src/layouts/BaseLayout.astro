@@ -1,4 +1,6 @@
 ---
+import Header from '@components/Header.astro';
+
 const { title, description } = Astro.props;
 ---
 
@@ -14,8 +16,9 @@ const { title, description } = Astro.props;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet" />
   </head>
-  <body class="min-h-screen flex items-center justify-center">
-    <main class="text-center space-y-6">
+  <body class="min-h-screen flex flex-col">
+    <Header />
+    <main class="flex-1 flex items-center justify-center text-center space-y-6">
       <slot />
     </main>
   </body>
