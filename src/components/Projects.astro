@@ -1,0 +1,47 @@
+---
+import { projects } from '@data/projects.js';
+---
+
+<section class="py-24" id="projects">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <h2 class="text-fluid-2xl font-bold mb-2">Projects</h2>
+    <p class="text-base-content/60 mb-10">Things I have built</p>
+    <div class="flex flex-col gap-6">
+      {projects.map((project) => (
+        <article class="card bg-base-200 border border-base-300 overflow-hidden">
+          <div class="flex flex-col gap-1 p-1 bg-base-300">
+            {project.images.map((img, i) => (
+              <figure class="flex-1 h-36 flex items-center justify-center bg-base-300">
+                <img
+                  src={img}
+                  alt={`${project.title} screenshot ${i + 1}`}
+                  class="max-w-full max-h-full object-scale-down p-2"
+                  loading="lazy"
+                />
+              </figure>
+            ))}
+          </div>
+          <div class="card-body">
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="card-title text-fluid-lg">{project.title}</h3>
+                <p class="text-xs uppercase tracking-wider text-base-content/40 font-medium">{project.context}</p>
+              </div>
+              <a href={project.github} target="_blank" rel="noopener noreferrer" class="text-base-content/40 hover:text-base-content transition-colors shrink-0" aria-label={`${project.title} on GitHub`}>
+                <svg class="size-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+            <p class="text-sm text-base-content/70 mt-3">{project.description}</p>
+            <div class="card-actions mt-4 flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <span class="px-3 py-1 rounded-full text-xs font-medium bg-base-300 text-base-content/70">{tag}</span>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
