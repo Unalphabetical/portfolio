@@ -1,17 +1,17 @@
 ---
-const skills = [
-  { name: 'Java', category: 'Language' },
-  { name: 'Python', category: 'Language' },
-  { name: 'JavaScript', category: 'Language' },
-  { name: 'HTML / CSS', category: 'Language' },
-  { name: 'SQL', category: 'Language' },
-  { name: 'Astro', category: 'Framework' },
-  { name: 'React', category: 'Framework' },
-  { name: 'Vite', category: 'Tool' },
-  { name: 'Node.js', category: 'Runtime' },
-  { name: 'Git', category: 'Tool' },
-  { name: 'Tailwind CSS', category: 'Framework' },
-  { name: 'MySQL', category: 'Database' },
+const groups = [
+  {
+    title: 'Languages',
+    items: ['Java', 'Python', 'JavaScript', 'HTML / CSS', 'SQL'],
+  },
+  {
+    title: 'Frameworks & Libraries',
+    items: ['Astro', 'React', 'Tailwind CSS'],
+  },
+  {
+    title: 'Tools & Platforms',
+    items: ['Vite', 'Node.js', 'Git', 'MySQL'],
+  },
 ];
 ---
 
@@ -20,11 +20,16 @@ const skills = [
     <div class="bg-base-200/50 rounded-box p-6 sm:p-10">
     <h2 class="text-fluid-2xl font-bold mb-2">Skills</h2>
     <p class="text-base-content/60 mb-10">Languages and tools I work with</p>
-    <div class="flex flex-wrap gap-3 reveal-children">
-      {skills.map((s) => (
-        <span class="px-5 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary-content">
-          {s.name}
-        </span>
+    <div class="flex flex-wrap gap-12 justify-between reveal-children">
+      {groups.map((group) => (
+        <div class="flex-1 basis-40">
+          <h3 class="text-fluid-base font-semibold text-primary mb-4">{group.title}</h3>
+          <ul class="list-disc list-inside marker:text-primary space-y-1.5">
+            {group.items.map((name) => (
+              <li class="text-base-content/80">{name}</li>
+            ))}
+          </ul>
+        </div>
       ))}
     </div>
     </div>
