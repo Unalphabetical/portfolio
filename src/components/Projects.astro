@@ -3,7 +3,7 @@ import { projects } from '@data/projects.js';
 ---
 
 <section class="py-24 reveal" id="projects" data-reveal-delay="100">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="bg-base-200/50 rounded-box p-6 sm:p-10">
     <h2 class="text-fluid-2xl font-bold mb-2">Projects</h2>
     <p class="text-base-content/60 mb-10">Things I have built</p>
@@ -37,7 +37,7 @@ import { projects } from '@data/projects.js';
             <p class="text-sm text-base-content/70 mt-3">{project.description}</p>
             <div class="card-actions mt-4 flex-wrap gap-2">
               {project.tags.map((tag) => (
-                <span class="px-3 py-1 rounded-full text-xs font-medium bg-base-300 text-base-content/70">{tag}</span>
+                <span class="px-5 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary-content">{tag}</span>
               ))}
             </div>
           </div>

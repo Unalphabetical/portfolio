@@ -3,32 +3,35 @@ const portraitSrc = `${import.meta.env.BASE_URL}portrait.jpg`;
 ---
 
 <section id="hero" class="min-h-screen flex items-center scroll-mt-16">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 w-full">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full">
     <div class="bg-base-200/50 rounded-box p-6 sm:p-10">
-    <div class="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+    <div class="grid md:grid-cols-5 gap-6 md:gap-8 items-center">
       <div class="md:col-span-3 space-y-6 reveal-children">
-        <h1 class="text-fluid-4xl font-bold leading-tight">
-          Puth Vang
+        <p class="text-fluid-lg font-medium text-primary tracking-tight">
+          Software and Full-Stack Developer
+        </p>
+        <h1 class="text-fluid-3xl font-bold leading-tight">
+          Hi, I'm <span class="text-primary">Puth Vang</span>.
         </h1>
-        <p class="text-fluid-lg text-base-content/70 leading-relaxed max-w-lg">
-          Full-stack developer leaning on Astro, Java, and Python to build useful tools - with a recent CS degree from Sacramento State and an AI-accelerated workflow.
+        <p class="text-fluid-base text-base-content/70 leading-relaxed max-w-lg">
+          I'm a full-stack developer who builds practical tools with <span class="text-primary">Astro</span>, <span class="text-primary">Java</span>, and <span class="text-primary">Python</span>, backed by a CS degree from Sacramento State and an AI-accelerated workflow.
         </p>
         <div class="flex flex-wrap gap-3">
           <a href="#projects" class="btn btn-primary">
             View projects
           </a>
-          <a href="#contact" class="btn btn-ghost">
+          <a href="#contact" class="btn btn-outline btn-primary">
             Get in touch
           </a>
         </div>
       </div>
       <div class="md:col-span-2 md:-translate-y-4 reveal" data-reveal-delay="300">
-        <div class="relative">
-          <div class="absolute -inset-1 -rotate-2 rounded-2xl bg-base-200"></div>
+        <div class="relative p-6">
+          <div class="absolute inset-0 -rotate-2 rounded-2xl bg-base-200"></div>
           <img
             src={portraitSrc}
             alt="Puth Vang"
-            class="relative rounded-2xl w-full h-auto object-cover aspect-[3/4]"
+            class="relative rounded-2xl w-full h-auto object-cover aspect-square"
             loading="eager"
           />
         </div>
